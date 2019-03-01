@@ -40,8 +40,6 @@ body{
 	list-style-type: none;
 	width: 100%;
 	height: 76px;
-	
-	
 	color: #FFFFFF;
 	background-color: #232A34;
 	margin:0; 
@@ -84,6 +82,7 @@ h1{
 	padding: 10px;
 	border-radius: 5%;
 	margin-top: 1px;
+	margin-bottom:1px;
 	
 	
 	
@@ -96,15 +95,26 @@ h2{
 	margin-bottom: 1px;
 	padding: 10px;
 	border-radius: 5%;
-	
-	
 }
+.skills-container{
+  display:grid;
+  grid-template: repeat(2, 1.6em)/repeat(4, 1fr);
+  grid-gap:7em;
+  grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
+  width:370px;
+  margin:0px auto;
+  padding:50px
+ }
+
+ .addedmargin{
+ 	margin-bottom: 0px;
+ }
+
+
 .section{
-	display: flex;
-	flex-direction: column;
-	align-items:flex-start;
+	
 	margin: 0 auto;
-	max-width: 600px;
+	max-width: 500px;
 }
 
 .section-container{
@@ -113,11 +123,6 @@ h2{
 	justify-content: center;
 	margin-bottom: 40px;
 	margin:2px 50px;
-	
-	
-
-	
-
 }
 
 
@@ -125,11 +130,9 @@ h2{
 	padding:5px;
 	border-bottom: 3px solid  #05A081;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 70px;
 	max-width: 400px;
-	
 	text-align:left;
-	
 	font-size:1.6em;
 }
 
@@ -170,6 +173,14 @@ h2{
 	width: 500px;
 
 
+}
+.contact{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	margin:0 auto;
+	width: 500px;
+	padding: 20px;
 }
 
 .changecolor{
@@ -228,10 +239,16 @@ h2{
 	font-size:1.3em;
 }
 
+.skills-container{
+  display:grid;
+  grid-template: repeat(2, 1.6em)/repeat(3, 1fr);
+  grid-gap:5em;
+  margin-left:10px;
+ 
+ }
+
  .section{
-	display: flex;
-	flex-direction: column;
-	align-items:flex-start;
+	
 	margin:2px 50px;
   }
   .date{
@@ -261,6 +278,12 @@ h2{
   .description{
 	font-size:0.9em;
 	width: 200px;
+}
+.contact{
+     display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	margin:2px 50px;
 }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
@@ -302,6 +325,14 @@ h2{
     text-align:left;
 	font-size:1.3em;
 } 
+
+.skills-container{
+  display:grid;
+  grid-template: repeat(2, 1.6em)/repeat(2, 1fr);
+  grid-gap:3.5em;
+  
+ 
+ }
 .section{
 	display: flex;
 	flex-direction: column;
@@ -330,5 +361,11 @@ h2{
   .description{
 	font-size:0.9em;
 	width: 200px;
+}
+.contact{
+     display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	margin:2px 50px;
 }
 }
