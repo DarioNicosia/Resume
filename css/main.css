@@ -8,11 +8,6 @@ body{
 	margin:0;
 	font-family: 'Raleway', sans-serif;
 	
-   
-	
-	
-
-	
 }
 
 #main-container{
@@ -44,7 +39,6 @@ body{
 	background-color: #232A34;
 	margin:0; 
     padding:0;
-
 }
 #addedmarginright{
 	margin-right:50px;
@@ -82,9 +76,6 @@ h1{
 	padding: 10px;
 	border-radius: 5%;
 	margin-top: 1px;
-	margin-bottom:1px;
-	
-	
 	
 	
 }
@@ -103,16 +94,17 @@ h2{
   grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
   width:370px;
   margin:0px auto;
-  padding:50px
+  padding:50px;
+  
  }
 
- .addedmargin{
- 	margin-bottom: 0px;
- }
+ 
 
 
 .section{
-	
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
 	margin: 0 auto;
 	max-width: 490px;
 }
@@ -130,7 +122,7 @@ h2{
 	padding:5px;
 	border-bottom: 3px solid  #05A081;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 50px;
 	max-width: 400px;
 	text-align:left;
 	font-size:1.6em;
@@ -178,9 +170,11 @@ h2{
 	display: flex;
 	flex-direction:row;
 	justify-content: space-around;
+	align-items: center;
 	margin:0 auto;
-	width: 500px;
-	padding: 20px;
+	max-width: 500px;
+	padding: 30px;
+
 }
 
 .changecolor{
@@ -218,7 +212,7 @@ h2{
 }
 
 .color{
-	font-size:1.2em;
+	font-size:1em;
 }
 .head-container{
 	display:flex;
@@ -280,7 +274,7 @@ h2{
 	width: 200px;
 }
 .contact{
-     display: flex;
+    display: flex;
 	flex-direction: column;
 	align-items:flex-start;
 	margin:2px 50px;
