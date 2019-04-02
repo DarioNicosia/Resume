@@ -1,0 +1,24 @@
+.text-focus-delay-two{animation:text-focus-delay-two 1s cubic-bezier(.55,.085,.68,.53) .2s backwards}
+ @keyframes text-focus-delay-two{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+
+ .fade-in{animation:fade-in 1s cubic-bezier(.39,.575,.565,1.000) both}
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+ .fade-in-delay{animation:fade-in-delay 2s cubic-bezier(.39,.575,.565,1.000) .5s both}
+ @keyframes fade-in-delay{0%{opacity:0}100%{opacity:1}}
+
+ .scale-in-hor-left{animation:scale-in-hor-left .5s cubic-bezier(.25,.46,.45,.94) both}
+ @keyframes scale-in-hor-left{0%{transform:scaleX(0);transform-origin:0 0;opacity:1}100%{transform:scaleX(1);transform-origin:0 0;opacity:1}}
+
+ .scale-in-hor-right{animation:scale-in-hor-right .9s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes scale-in-hor-right{0%{transform:scaleX(0);transform-origin:100% 100%;opacity:1}100%{transform:scaleX(1);transform-origin:100% 100%;opacity:1}}
+
+.scale-in-hor-right-delay{animation:scale-in-hor-right-delay .5s cubic-bezier(.25,.46,.45,.94) .3s both}
+@keyframes scale-in-hor-right-delay{0%{transform:scaleX(0);transform-origin:100% 100%;opacity:1}100%{transform:scaleX(1);transform-origin:100% 100%;opacity:1}}
+
+.scale-in-hor-center{animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) .4s both}
+@keyframes scale-in-hor-center{0%{transform:scaleX(0);opacity:1}100%{transform:scaleX(1);opacity:1}}
+
+.scale-in-hor-left-delay{animation:scale-in-hor-left .5s cubic-bezier(.25,.46,.45,.94) .4s both}
+@keyframes scale-in-hor-left-delay{0%{transform:scaleX(0);transform-origin:0 0;opacity:1}100%{transform:scaleX(1);transform-origin:0 0;opacity:1}}
