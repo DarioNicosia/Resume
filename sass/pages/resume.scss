@@ -1,0 +1,231 @@
+.resume-container{
+    display:grid;
+    grid-template:repeat(2,2rem)/repeat(4,1fr);
+    width:100%;
+    grid-template: repeat(auto-fit, minmax(1em, 1fr));
+    grid-template-areas:
+      "a h h h"
+      "a s s s"
+  
+  }
+  
+  .resume-aside{
+    margin:0;
+      padding: 0;
+      background-color: #05A081;
+      grid-area: a;
+    max-width: 100%;
+    height:100%;
+    position: fixed;
+         &__photo{
+          padding: 2em;
+          background-color:#05A081;
+          margin-top: 5em;
+         }
+         &__img{
+          max-width: 150px; 
+          max-height: 150px;
+          
+          margin: 0 auto;
+          border-radius:100rem;
+          border-inline-end-color:black;
+          border-image-slice:3px;
+          @media screen and (min-width: 480px) and (max-width: 768px){
+          max-width: 120px; 
+          max-height: 120px;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+          max-width: 90px; 
+          max-height: 90px;  
+          }
+         }
+         &__header{
+          text-align: center;
+          color:#05A081;
+          background-color: #232A34;;
+          margin-top:0px;
+          padding: 1px;
+          text-transform: uppercase;
+          font-size:0.6em;
+          @media screen and (min-width: 480px) and (max-width: 768px){
+            font-size:0.6em;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+            font-size: .5em;
+          }
+         }
+         &__contact-section{
+          padding:1em;
+          background-color: #05A081;
+          font-size:.9em;
+          @media screen and (min-width: 480px) and (max-width: 768px){
+            font-size:.7em;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+            font-size: .5em;
+          }
+         }
+         &__social-icon{
+           
+           display: flex;
+             flex-direction: row;
+             justify-content: center;
+         }
+  }
+  
+  .header-resume{
+    grid-area: h;
+    width:100%;
+    display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    font-size: 2.3em;
+    margin-top: 6em;
+    margin-right:5.5em;
+    background: #05A081;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      font-size: 1.2em;
+      margin-top: 9em;
+      margin-right:1em;
+    } 
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      font-size: .9em;
+      margin-top: 11.5em;
+      margin-right:3em;
+    }
+    
+      
+       &__first h2{
+         background: #05A081;
+         color: #232A34;
+         padding: .1em;
+         margin-bottom: .1em;
+         @media screen and (min-width: 480px) and (max-width: 768px){
+           margin-left: 3em;
+         }
+         @media only screen and (min-width: 320px) and (max-width: 479px){
+           margin-left: 4.5em;
+         }
+         
+       }
+       &__second h3{
+         background: #232A34;
+         color: #F6F6F6;
+         margin-right: 7.1em;
+         padding: .1em;
+         margin-top: .1em;
+         @media screen and (min-width: 480px) and (max-width: 768px){
+           margin-right: 4em;
+         }
+         @media only screen and (min-width: 320px) and (max-width: 479px){
+           margin-right: .1em;
+         }
+       }
+  
+  }
+  
+  .section-resume-container{
+    grid-area: s;
+    margin-top: 20em;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+    margin-top: 15em;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      margin-top: 11em;
+      margin-left: 5em;
+    }
+  }
+  .section-resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 5em;
+          &__title h3{
+            background: #05A081;
+            padding: .5em;
+            color: #232A34;
+            margin-top:3em;
+            @media screen and (min-width: 480px) and (max-width: 768px){
+              font-size: 1em;
+            }
+            @media only screen and (min-width: 320px) and (max-width: 479px){
+              font-size: .7em;
+            }
+          }
+    
+  }
+  
+  .resume{
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    margin-bottom: 40px;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+    display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+    align-items: flex-start;
+    margin-left: 7em;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+    display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+    align-items: flex-start;
+    margin-left: 8em;
+    }
+  
+  
+  }
+  .resume-date{
+      font-size: 0.9em;
+      margin-right:3em;
+      padding: 3px;
+      width: 100px;
+      @media screen and (min-width: 480px) and (max-width: 768px){
+        font-size: .8em;
+      }
+      @media only screen and (min-width: 320px) and (max-width: 479px){
+        font-size: .6em;
+      }
+      
+  }
+  
+  .resume-detail__title{
+    font-size:1em;
+    font-weight: bold;
+    margin-bottom:2px;
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      font-size: .8em;
+    }
+  }
+  
+  
+  .resume-detail__subtitle{
+    font-size:0.9em;
+      font-weight: italic;
+      margin: 1px;
+    color:#05A081;
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      font-size: .8em;
+    }
+  }
+  .resume-detail__description{
+    font-size:0.9em;
+      margin-right: 5px;
+  
+    width: 250px;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      font-size: .8em;
+      width:210px;
+      margin-right: 8px;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      font-size: .7em;
+      width: 190px;
+      margin-right: 50px;
+    }
+  }

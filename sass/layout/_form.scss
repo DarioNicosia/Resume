@@ -1,0 +1,63 @@
+.container-form{
+    width: 30%;
+    margin-top:1em;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      width:90%;
+      margin:2em;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+     width:80%;
+     margin:4em;
+    }
+  }
+  
+  .form{
+    width:100%;
+    margin:0 auto;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      width: 80%;
+    }
+    
+         &__layout{
+           display:flex;
+           justify-content: space-between;
+         }
+         &__field label{
+          display: block;
+          font-size:1em;
+          font-weight: bold;
+          color: #232A34;
+          width:100%;
+          line-height: 2rem;
+          padding-bottom: .5rem;
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+            font-size: .8em;
+          }
+         }
+         &__field input {
+          width: 100%;
+          outline: none;
+          padding: .5em;
+          border:1px solid #232A34;
+          font-size: 1em;
+          color: #232A34;
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+            font-size: .8em;
+            width:80%;
+          }
+         }
+         &__field textarea {
+          width: 100%;
+          outline: none;
+          padding: .5em;
+          border:1px solid #232A34;
+          font-size: 1rem;
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+            font-size:.8em;
+            width:90%;
+            margin: 0 auto;
+          }
+  
+         }
+  
+  }
