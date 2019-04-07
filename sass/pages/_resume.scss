@@ -1,0 +1,166 @@
+
+
+.resume-container{
+    display:flex;
+    justify-content: space-between;
+    }
+  
+  .resume-aside{
+      background-color: #05A081;
+      height: 100%;
+      position:fixed;
+          &__photo{
+          padding: 7em 2em 2em 2em;
+          background-color:#05A081;
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+          padding: 7em 1em 1em 1em;
+          }
+         }
+          &__img{
+          max-width: 200px; 
+          max-height: 200px;
+          margin: 0 auto;
+          border-radius:100rem;
+          border-inline-end-color:black;
+          border-image-slice:3px;
+          @media screen and (min-width: 480px) and (max-width: 768px){
+          max-width: 100px; 
+          max-height: 100px;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+          max-width: 70px; 
+          max-height: 70px;  
+          }
+         }
+         &__header{
+          text-align: center;
+          color:#05A081;
+          background-color: #232A34;;
+          margin-top:0px;
+          padding: 1px;
+          text-transform: uppercase;
+          font-size:0.6em;
+          @media screen and (min-width: 480px) and (max-width: 768px){
+            font-size:0.6em;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+            font-size: .4em;
+          }
+         }
+         &__contact-section{
+          padding:1em;
+          background-color: #05A081;
+          font-size:1em;
+          @media screen and (min-width: 480px) and (max-width: 768px){
+            font-size:.7em;
+          }
+          @media only screen and (min-width: 320px) and (max-width: 479px){
+            font-size: .4em;
+          }
+         }
+         &__social-icon{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           margin-bottom: 1em;
+         }
+  }
+  
+  .section-resume-container{
+    margin:6em auto 0 25em;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      margin:6em auto 0 13em;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      margin:6em auto 0 8em;
+    }
+  }
+
+  .header-resume{
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-right: 1em;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      font-size: 1.3em;
+      margin-right: 1.2em;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      font-size: 1em;
+    }
+  }
+
+  .header-resume__first h2{
+    background: #05A081;
+    color: #232A34;
+    padding: .1em;
+    margin-bottom: 0;
+  }
+  .header-resume__second h3{
+    background: #232A34;
+    color: #F6F6F6;
+    padding:.1em;
+    margin-top:.1em;
+  }
+
+  .section-resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin: 0 auto;
+    margin-bottom: 5em;
+          &__title h3{
+            background: #05A081;
+            padding: .5em;
+            color: #232A34;
+            margin-top:3em;
+            font-size: 1.5em;
+            @media screen and (min-width: 480px) and (max-width: 768px){
+              font-size: 1em;
+              
+            }
+            @media only screen and (min-width: 320px) and (max-width: 479px){
+              font-size: .7em;
+              
+            }
+         
+          }
+  }
+
+  .resume{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      font-size: 1em;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 479px){
+      font-size: .6em;
+    }
+  }
+  .resume-date{
+    margin-right: 1.4em;
+  }
+
+  .resume-detail__title{
+    font-weight: bold;
+    margin-bottom:2px;
+  }
+
+  .resume-detail__subtitle{
+    font-weight: italic;
+    margin: 1px;
+    color:#05A081;
+  }
+
+  .resume-detail__description{
+    font-size:0.8em;
+    margin-right: 5em;
+    
+  }

@@ -1004,30 +1004,27 @@ body {
 }
 
 .resume-container {
-  display: grid;
-  grid-template: repeat(2, 2rem)/repeat(4, 1fr);
-  width: 100%;
-  grid-template: repeat(auto-fit, minmax(1em, 1fr));
-  grid-template-areas: "a h h h" "a s s s";
+  display: flex;
+  justify-content: space-between;
 }
 
 .resume-aside {
-  margin: 0;
-  padding: 0;
   background-color: #05A081;
-  grid-area: a;
-  max-width: 100%;
   height: 100%;
   position: fixed;
 }
 .resume-aside__photo {
-  padding: 2em;
+  padding: 7em 2em 2em 2em;
   background-color: #05A081;
-  margin-top: 5em;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .resume-aside__photo {
+    padding: 7em 1em 1em 1em;
+  }
 }
 .resume-aside__img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 200px;
+  max-height: 200px;
   margin: 0 auto;
   border-radius: 100rem;
   border-inline-end-color: black;
@@ -1035,14 +1032,14 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .resume-aside__img {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 100px;
+    max-height: 100px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .resume-aside__img {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 70px;
+    max-height: 70px;
   }
 }
 .resume-aside__header {
@@ -1061,13 +1058,13 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .resume-aside__header {
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
 }
 .resume-aside__contact-section {
   padding: 1em;
   background-color: #05A081;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .resume-aside__contact-section {
@@ -1076,96 +1073,70 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .resume-aside__contact-section {
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
 }
 .resume-aside__social-icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 1em;
+}
+
+.section-resume-container {
+  margin: 6em auto 0 25em;
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .section-resume-container {
+    margin: 6em auto 0 13em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .section-resume-container {
+    margin: 6em auto 0 8em;
+  }
 }
 
 .header-resume {
-  grid-area: h;
-  width: 100%;
+  font-size: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: 2.3em;
-  margin-top: 6em;
-  margin-right: 5.5em;
-  background: #05A081;
+  align-items: center;
+  margin-right: 1em;
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .header-resume {
-    font-size: 1.2em;
-    margin-top: 9em;
-    margin-right: 1em;
+    font-size: 1.3em;
+    margin-right: 1.2em;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .header-resume {
-    font-size: 0.9em;
-    margin-top: 11.5em;
-    margin-right: 3em;
+    font-size: 1em;
   }
 }
+
 .header-resume__first h2 {
   background: #05A081;
   color: #232A34;
   padding: 0.1em;
-  margin-bottom: 0.1em;
+  margin-bottom: 0;
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .header-resume__first h2 {
-    margin-left: 3em;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .header-resume__first h2 {
-    margin-left: 4.5em;
-  }
-}
+
 .header-resume__second h3 {
   background: #232A34;
   color: #F6F6F6;
-  margin-right: 7.1em;
   padding: 0.1em;
   margin-top: 0.1em;
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .header-resume__second h3 {
-    margin-right: 4em;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .header-resume__second h3 {
-    margin-right: 0.1em;
-  }
-}
-
-.section-resume-container {
-  grid-area: s;
-  margin-top: 20em;
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .section-resume-container {
-    margin-top: 15em;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .section-resume-container {
-    margin-top: 11em;
-    margin-left: 5em;
-  }
 }
 
 .section-resume {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
   margin-bottom: 5em;
 }
 .section-resume__title h3 {
@@ -1173,6 +1144,7 @@ body {
   padding: 0.5em;
   color: #232A34;
   margin-top: 3em;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .section-resume__title h3 {
@@ -1187,88 +1159,41 @@ body {
 
 .resume {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
+  align-content: stretch;
   margin-bottom: 40px;
+  font-size: 1.2em;
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .resume {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 7em;
+    font-size: 1em;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .resume {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 8em;
-  }
-}
-
-.resume-date {
-  font-size: 0.9em;
-  margin-right: 3em;
-  padding: 3px;
-  width: 100px;
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .resume-date {
-    font-size: 0.8em;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .resume-date {
     font-size: 0.6em;
   }
 }
 
+.resume-date {
+  margin-right: 1.4em;
+}
+
 .resume-detail__title {
-  font-size: 1em;
   font-weight: bold;
   margin-bottom: 2px;
 }
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .resume-detail__title {
-    font-size: 0.8em;
-  }
-}
 
 .resume-detail__subtitle {
-  font-size: 0.9em;
   font-weight: italic;
   margin: 1px;
   color: #05A081;
 }
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .resume-detail__subtitle {
-    font-size: 0.8em;
-  }
-}
 
 .resume-detail__description {
-  font-size: 0.9em;
-  margin-right: 5px;
-  width: 250px;
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .resume-detail__description {
-    font-size: 0.8em;
-    width: 210px;
-    margin-right: 8px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .resume-detail__description {
-    font-size: 0.7em;
-    width: 190px;
-    margin-right: 50px;
-  }
+  font-size: 0.8em;
+  margin-right: 5em;
 }
 
 /*# sourceMappingURL=style.css.map */
